@@ -1,0 +1,54 @@
+{
+  "tests": [
+    {
+      "name": "Test Case 1",
+      "setup": "",
+      "run": "python3 Main.py",
+      "input": "enqueue, enqueue, enqueue, dequeue, dequeue\r\n3, 4, 5, -, -",
+      "output": "5=>None",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 6
+    },
+    {
+      "name": "Test Case 2",
+      "setup": "",
+      "run": "python3 Main.py",
+      "input": "enqueue, enqueue, enqueue\r\n1, 2, 3",
+      "output": "1=>2=>3=>None",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 6
+    },
+    {
+      "name": "Test Case 3",
+      "setup": "",
+      "run": "python3 Main.py",
+      "input": "dequeue, dequeue\r\n-, -",
+      "output": "None",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 6
+    },
+    {
+      "name": "Test Case 4",
+      "setup": "",
+      "run": "python3 Main.py",
+      "input": "enqueue, enqueue, enqueue, dequeue, dequeue, enqueue\r\n1, 2, 3, -, -, 4",
+      "output": "3=>4=>None",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 6
+    },
+    {
+      "name": "Test Case 5",
+      "setup": "",
+      "run": "python3 Main.py",
+      "input": "enqueue, enqueue, enqueue, dequeue, dequeue, enqueue, enqueue\r\n1, 2, 3, -, -, 2, 3",
+      "output": "3=>2=>3=>None",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 6
+    }
+  ]
+}
